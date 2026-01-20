@@ -36,3 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     typeWriter();
 });
+const toggleButton = document.getElementById('dark-mode-toggle');
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+const text = "Hi, I'm Julián Serio";
+window.onload = typeWriter;

@@ -18,27 +18,32 @@
 </head>
 <body>
 	<main>
-		<header class="header">
+		<header class="header" id="home">
 			<nav class="navegacion">
 				<a class="nav-logo">Julián Serio</a>
-                <ul class="nav-list">
-                    <li class="list-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="list-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="list-item"><a href="#portafolio" class="nav-link">Portafolio</a></li>
-                </ul>
-            </nav>	
+				<ul class="nav-list">
+					<li class="list-item"><a href="#home" class="nav-link">Home</a></li>
+					<li class="list-item"><a href="#about" class="nav-link">About</a></li>
+					<li class="list-item"><a href="#portafolio" class="nav-link">Portafolio</a></li>
+				</ul>
+				<button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+					🌙
+				</button>
+			</nav>
 		</header>
 		<section class="seccion-principal">
-			<video autoplay muted loop class="video-fondo">
-				<source src="imgs/video.mp4" type="video/mp4">
-				Tu navegador no soporta la etiqueta de video.
-			</video>
 			<div class="container text-center">
 				<h1 class="titulo-bienvenida">
-					<span id="bienvenida"></span><span id="cursor" class="cursor">|</span>
+				<span id="bienvenida"></span><span id="cursor" class="cursor">|</span>
 				</h1>
+				<p class="subtitulo">Building solutions with code and creativity</p>
+				<a href="#portafolio" class="btn-cta">View My Work</a>
 			</div>
+			<div class="shape shape1"></div>
+			<div class="shape shape2"></div>
+			<div class="shape shape3"></div>
 		</section>
+
 		<section class="seccion-about" id="about" class="about-mf sect-pt4 route">
 			<div class="container">
 				<div class="row">
@@ -62,31 +67,52 @@
 										</div>
 									</div>
 									<div class="skill-mf">
-										<span>JAVA</span> <span class="pull-right">90%</span>
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-										</div>
-										<span>HTML / CSS</span> <span class="pull-right">90%</span>
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0"
-											aria-valuemax="100"></div>
-										</div>
-										<span>JAVASCRIPT</span> <span class="pull-right">50%</span>
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-											aria-valuemax="100"></div>
-										</div>
-										<span>PYTHON</span> <span class="pull-right">25%</span>
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-										</div>
-										<span>ASP .NET CORE</span> <span class="pull-right">70%</span>
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-										</div>
+										<div class="skills-section">
+											<h3>Skills</h3>
+
+											<h4>Languages</h4>
+											<p class="badges">
+												<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+												<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+												<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+												<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+												<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white">
+												<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+												<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white">
+												<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white">
+											</p>
+
+											<h4>Frameworks</h4>
+											<p class="badges">
+												<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white">
+												<img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB">
+												<img src="https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
+												<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+												<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white">
+											</p>
+
+											<h4>Databases</h4>
+											<p class="badges">
+												<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+												<img src="https://img.shields.io/badge/SQLite-07405e?style=for-the-badge&logo=sqlite&logoColor=white">
+											</p>
+
+											<h4>IDE</h4>
+											<p class="badges">
+												<img src="https://img.shields.io/badge/Android%20Studio-346ac1?style=for-the-badge&logo=androidstudio&logoColor=white">
+												<img src="https://img.shields.io/badge/Eclipse-FE7A16?style=for-the-badge&logo=eclipse&logoColor=white">
+												<img src="https://img.shields.io/badge/VS%20Code-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+											</p>
+
+											<h4>Tools & Technologies</h4>
+											<p class="badges">
+												<img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white">
+												<img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white">
+												<img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white">
+												<img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white">
+											</p>
+											</div>
+
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -94,9 +120,9 @@
 										<div class="title-box-2">
 											<h5 class="title-left">About me</h5>
 										</div>
-										<p class="lead">I am passionate about mobile app development and dedicated to staying on the cutting edge of this rapidly evolving field. With a strong foundation in both design and programming, I specialize in crafting intuitive and engaging experiences for users.</p>
-										<p class="lead">As a lifelong learner, I thrive on expanding my knowledge and acquiring new skills. I am constantly exploring the latest trends and technologies to enhance my development process and deliver innovative solutions. With each project, I embrace the opportunity to challenge myself, adapt to emerging trends, and push the boundaries of what's possible.</p>
-										<p class="lead">I am currently a student at the National University of La Plata and while I carry out ambitious personal projects.</p>
+										<p class="lead">I am a student of IT Analysis and Information Systems at the National University of La Plata. I am passionate about cybersecurity, DevOps, and software development, fields in which I am eager to keep learning and growing professionally.</p>
+										<p class="lead">I have hands-on experience developing web, mobile, and desktop applications, and I enjoy working in a team, learning from others, and contributing with commitment, curiosity, and a willingness to improve.</p>
+										<p class="lead">My goal is to continue developing my technical and professional skills in dynamic environments that challenge me and allow me to create value through technology.</p>
 									</div>
 								</div>
 							</div>
